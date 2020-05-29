@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Jost:wght@600&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      background:#f5f5f5;
+    }
+    #navbar{
+      color: #000;
+      overflow: auto;
+      padding:0;
+    }
+    #navbar p{
+      transform:translate(-10%,20%);
+    }
+    #navbar a{
+      color: #000;
+      text-decoration:none;
+    }
+    #navbar a span{
+      color: #03bfbc;
+      text-decoration:none;
+    }
+    #navbar li{
+      display: block; 
+      padding: 20px;
+      text-align: center;
+      float:right;
+      text-decoration:none;
+      font-size:15px;
+      text-transform:uppercase;
+    }
+    #navbar .logo{
+      float: left;
+      padding:20px;
+      font-size: 40px;
+      margin-top:-20px;
+      font-family: 'Jost', sans-serif;
+    }
+    .card{
+      margin:100px auto;
+      background:#eee;
+      border-radius:5px;
+      width: 350px;
+      text-align:center;
+      color:#424242;
+      height:740px;
+      box-shadow: 0 10px 20px -10px rgba(0,0,0,0.75); 
+      transform:translateY(-10%);
+    }
+    .cover-photo{
+      background: url(face1bg.jpg);
+      background-size:cover;
+      height: 160px;
+      width:100%;
+      border-radius:5px 5px 0 0;
+    }
+    .profile{
+      height:100px;
+      width:100px;
+      border-radius:50%;
+      margin: 93px 0 0 -175px;
+      border: 1px solid #eee;
+      padding:7px;
+      background: #eee; 
+    }
+    .profile-name{
+      font-size:25px;
+      margin:27px 0 0 100px;
+    }
+    .about{
+      margin-top:25px;
+      line-height:22px;
+      
+    }
+    button{
+      margin:10px 0 40px 0;
+    }
+    .msg-button, .like-button{
+      background:#03bfbc;
+      border: 1px solid#b2dfdb;
+      padding:10px 25px;
+      color:#424242;
+      border-radius:3px;
+      font-family:'Lucida Sans', sans-serif;
+      cursor:pointer;
+    }
+    .like-button{
+      margin-left:10px;
+      background:transparent;
+      color:#02899c;
+    }
+    .like-button:hover{
+      color:#424242;
+      background: #03bfbc;
+      transition: 0.5s;
+    }
+    .compatibility{
+      max-width:300px;
+      margin-left:25px;
+    }
+    .compatibility h2{
+      text-align:center;
+      text-transform:uppercase;
+      font-size:15px;
+      letter-spacing:0.2em;
+      margin-top:-7px;
+      margin-bottom:35px;
+      color:#03aaa7;
+    }
+    .ratings{
+      box-sizing:border-box;
+      width:100%;
+      margin: 20px 0;
+    }
+    .ratings p{
+      color:#757575;
+      text-transform:uppercase;
+      margin: 0 0 10px;
+      padding:0;
+      font-size:14px;
+    }
+    .ratings p:nth-child(2){
+      float:right;
+      position:relative;
+      top:-25px;
+    }
+    .rate{
+      background:#eee;
+      padding:4px;
+      box-sizing: boreder-box;
+      border:transparent;
+      border-radius:5px;
+    }
+    .rating_level{
+      background:#03bfbc;
+      width:100%;
+      height:3px;
+    }
+    .card:nth-child(2){
+      float:right;
+      position:relative;
+    }
+    .cover-photo2{
+      background: url(face2bg.jpg);
+      background-size:cover;
+      height: 160px;
+      width:100%;
+      border-radius:5px 5px 0 0;
+    }
+    .card:nth-child(3){
+      float:left;
+      position:relative;
+    }
+    .cover-photo3{
+      background: url(face3bg.jpg);
+      background-size:cover;
+      height: 160px;
+      width:100%;
+      border-radius:5px 5px 0 0;
+    }
+    .view{
+      margin-top:40px;
+      color:#03aaa7;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div class ="showcase">
+      <h1 class="logo"><a href="index.html"> venus </a> </h1>
+      <li><a href="#"> <span>log out</span> </a> </li>
+      <li><a href="#"> messages </a> </li>
+      <li><a href="#"> likes </a> </li>
+      <li><a href="#"> profile </a> </li>
+    </div>
+    <br><br>
+    <p>astrology compatibility-based dating</p>
+  </nav>
+  <div class="card">
+    <div class="cover-photo">
+      <img src="face1.jpg" class="profile">
+    </div>
+    <div class="profile-name">Indigo Taylor</div>
+    <p class="about"> Aspiring UI Designer. I teach yoga at <br> Planet Fitness. Let's go for coffee ! </p>
+    <button class="msg-button">Message</button>
+    <button class="like-button">Like</button>
+    <div class="compatibility">
+      <h2>compatibility score</h2>
+      <div class="ratings">
+        <p>sex & intimacy</p>
+        <p>75%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:75%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>communication & intellect</p>
+        <p>77%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:77%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>values</p>
+        <p>62%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:62%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>emotions</p>
+        <p>80%</p>
+        <div class="rate">
+          <div class="rating_level"style="width:80%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>summary</p>
+        <p>77%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:77%"></div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="card">
+    <div class="cover-photo3">
+      <img src="face3.jpg" class="profile">
+    </div>
+    <div class="profile-name">Sam Nguyen</div>
+    <p class="about"> Student studying environmental design <br> at OCAD. You + me + wine = yes please!  </p>
+    <button class="msg-button">Message</button>
+    <button class="like-button">Like</button>
+    <div class="compatibility">
+      <h2>compatibility score</h2>
+      <div class="ratings">
+        <p>sex & intimacy</p>
+        <p>90%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:90%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>communication & intellect</p>
+        <p>86%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:86%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>values</p>
+        <p>75%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:75%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>emotions</p>
+        <p>60%</p>
+        <div class="rate">
+          <div class="rating_level"style="width:60%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>summary</p>
+        <p>74%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:74%"></div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="card">
+    <div class="cover-photo2">
+      <img src="face2.jpg" class="profile">
+    </div>
+    <div class="profile-name">Selene Pena</div>
+    <p class="about"> Beauty Entrepreneur. You're so pretty that <br> you made me forget my pickup line!  </p>
+    <button class="msg-button">Message</button>
+    <button class="like-button">Like</button>
+    <div class="compatibility">
+      <h2>compatibility score</h2>
+      <div class="ratings">
+        <p>sex & intimacy</p>
+        <p>58%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:58%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>communication & intellect</p>
+        <p>84%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:84%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>values</p>
+        <p>71%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:71%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>emotions</p>
+        <p>80%</p>
+        <div class="rate">
+          <div class="rating_level"style="width:80%"></div>
+        </div>
+      </div>  
+      <div class="ratings">
+        <p>summary</p>
+        <p>79%</p>
+        <div class="rate">
+          <div class="rating_level" style="width:79%"></div>
+        </div>
+      </div>  
+    </div>
+    <p class="view">view more</p>
+  </div>
+ 
+
+
+
+
+
+
+
+
+</body>
+</html>
